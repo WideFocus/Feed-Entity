@@ -4,7 +4,7 @@
  * http://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Data\Source;
+namespace WideFocus\Feed\Entity\Source;
 
 /**
  * Contains information about the source to use for a feed.

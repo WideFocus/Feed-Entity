@@ -4,7 +4,7 @@
  * http://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Data\Layout;
+namespace WideFocus\Feed\Entity\Layout;
 
 /**
  * Contains information about how the feed should be formatted.

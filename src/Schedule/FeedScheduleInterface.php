@@ -4,9 +4,9 @@
  * http://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Data\Schedule;
+namespace WideFocus\Feed\Entity\Schedule;
 
-use WideFocus\Feed\Data\FeedInterface;
+use WideFocus\Feed\Entity\FeedInterface;
 
 /**
  * Contains information about when a feed should be generated.

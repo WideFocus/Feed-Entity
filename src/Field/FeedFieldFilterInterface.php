@@ -4,7 +4,7 @@
  * http://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Data\Field;
+namespace WideFocus\Feed\Entity\Field;
 
 /**
  * Contains information about a filter used to alter the contents of a
@@ -58,7 +58,7 @@ interface FeedFieldFilterInterface
      *
      * @return FeedFieldFilterInterface
      */
-    public function setFilterType($filterType): FeedFieldFilterInterface;
+    public function setFilterType(string $filterType): FeedFieldFilterInterface;
 
     /**
      * Get the sort order.

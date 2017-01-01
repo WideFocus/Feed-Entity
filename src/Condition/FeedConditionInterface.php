@@ -4,7 +4,7 @@
  * http://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Data\Condition;
+namespace WideFocus\Feed\Entity\Condition;
 
 /**
  * Contains information about how to validate a feed item.

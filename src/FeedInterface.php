@@ -4,13 +4,13 @@
  * http://widefocus.net
  */
 
-namespace WideFocus\Feed\Data;
+namespace WideFocus\Feed\Entity;
 
 use DateTimeInterface;
-use WideFocus\Feed\Data\Condition\FeedConditionInterface;
-use WideFocus\Feed\Data\Field\FeedFieldInterface;
-use WideFocus\Feed\Data\Layout\FeedLayoutInterface;
-use WideFocus\Feed\Data\Source\FeedSourceInterface;
+use WideFocus\Feed\Entity\Condition\FeedConditionInterface;
+use WideFocus\Feed\Entity\Field\FeedFieldInterface;
+use WideFocus\Feed\Entity\Layout\FeedLayoutInterface;
+use WideFocus\Feed\Entity\Source\FeedSourceInterface;
 
 /**
  * Contains all the information needed to write a feed.
@@ -20,9 +20,9 @@ interface FeedInterface
     /**
      * Get the feed id.
      *
-     * @return integer
+     * @return int
      */
-    public function getFeedId(): integer;
+    public function getFeedId(): int;
 
     /**
      * Set the feed id.

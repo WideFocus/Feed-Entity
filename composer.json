@@ -1,6 +1,6 @@
 {
-    "name": "widefocus/feed-data",
-    "description": "This package contains models to describe the structure of a feed.",
+    "name": "widefocus/feed-entity",
+    "description": "This package contains entities to describe the structure of a feed.",
     "type": "library",
     "license": "proprietary",
     "prefer-stable": true,
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "WideFocus\\Feed\\Data\\": "src"
+            "WideFocus\\Feed\\Entity\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WideFocus\\Feed\\Data\\Tests\\": "tests"
+            "WideFocus\\Feed\\Entity\\Tests\\": "tests"
         }
     }
 }
