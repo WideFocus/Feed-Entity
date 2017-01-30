@@ -94,18 +94,18 @@ interface FeedFieldInterface
     /**
      * Get the sort order.
      *
-     * @return string
+     * @return int
      */
-    public function getSortOrder(): string;
+    public function getSortOrder(): int;
 
     /**
      * Set the sort order.
      *
-     * @param string $sortOrder
+     * @param int $sortOrder
      *
      * @return FeedFieldInterface
      */
-    public function setSortOrder(string $sortOrder): FeedFieldInterface;
+    public function setSortOrder(int $sortOrder): FeedFieldInterface;
 
     /**
      * Get the filters.
