@@ -16,34 +16,34 @@ interface FeedScheduleInterface
     /**
      * Get the schedule id.
      *
-     * @return int
+     * @return string
      */
-    public function getScheduleId(): int;
+    public function getScheduleId(): string;
 
     /**
      * Set the schedule id.
      *
-     * @param int $scheduleId
+     * @param string $scheduleId
      *
      * @return FeedScheduleInterface
      */
-    public function setScheduleId(int $scheduleId): FeedScheduleInterface;
+    public function setScheduleId(string $scheduleId): FeedScheduleInterface;
 
     /**
      * Get the feed id.
      *
-     * @return int
+     * @return string
      */
-    public function getFeedId(): int;
+    public function getFeedId(): string;
 
     /**
      * Set the feed id.
      *
-     * @param int $feedId
+     * @param string $feedId
      *
      * @return FeedScheduleInterface
      */
-    public function setFeedId($feedId): FeedScheduleInterface;
+    public function setFeedId(string $feedId): FeedScheduleInterface;
 
     /**
      * Get the schedule expression.

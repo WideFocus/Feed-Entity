@@ -14,50 +14,50 @@ interface FeedConditionInterface
     /**
      * Get the condition id.
      *
-     * @return int
+     * @return string
      */
-    public function getConditionId(): int;
+    public function getConditionId(): string;
 
     /**
      * Set the condition id.
      *
-     * @param int $conditionId
+     * @param string $conditionId
      *
      * @return FeedConditionInterface
      */
-    public function setConditionId(int $conditionId): FeedConditionInterface;
+    public function setConditionId(string $conditionId): FeedConditionInterface;
 
     /**
      * Get the parent id.
      *
-     * @return int
+     * @return string
      */
-    public function getParentId(): int;
+    public function getParentId(): string;
 
     /**
      * Set the parent id.
      *
-     * @param int $parentId
+     * @param string $parentId
      *
      * @return FeedConditionInterface
      */
-    public function setParentId(int $parentId): FeedConditionInterface;
+    public function setParentId(string $parentId): FeedConditionInterface;
 
     /**
      * Get the feed id.
      *
-     * @return int
+     * @return string
      */
-    public function getFeedId(): int;
+    public function getFeedId(): string;
 
     /**
      * Set the feed id.
      *
-     * @param int $feedId
+     * @param string $feedId
      *
      * @return FeedConditionInterface
      */
-    public function setFeedId(int $feedId): FeedConditionInterface;
+    public function setFeedId(string $feedId): FeedConditionInterface;
 
     /**
      * Get the type.

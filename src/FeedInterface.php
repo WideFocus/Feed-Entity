@@ -20,18 +20,18 @@ interface FeedInterface
     /**
      * Get the feed id.
      *
-     * @return int
+     * @return string
      */
-    public function getFeedId(): int;
+    public function getFeedId(): string;
 
     /**
      * Set the feed id.
      *
-     * @param int $feedId
+     * @param string $feedId
      *
      * @return FeedInterface
      */
-    public function setFeedId(int $feedId): FeedInterface;
+    public function setFeedId(string $feedId): FeedInterface;
 
     /**
      * Get the feed name.

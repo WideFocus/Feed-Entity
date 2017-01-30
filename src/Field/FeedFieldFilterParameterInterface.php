@@ -15,34 +15,34 @@ interface FeedFieldFilterParameterInterface
     /**
      * Get the parameter id.
      *
-     * @return int
+     * @return string
      */
-    public function getParameterId(): int;
+    public function getParameterId(): string;
 
     /**
      * Set the parameter id.
      *
-     * @param int $parameterId
+     * @param string $parameterId
      *
      * @return FeedFieldFilterParameterInterface
      */
-    public function setParameterId(int $parameterId): FeedFieldFilterParameterInterface;
+    public function setParameterId(string $parameterId): FeedFieldFilterParameterInterface;
 
     /**
      * Get the filter id.
      *
-     * @return int
+     * @return string
      */
-    public function getFilterId(): int;
+    public function getFilterId(): string;
 
     /**
      * Set the filter id.
      *
-     * @param int $filterId
+     * @param string $filterId
      *
      * @return FeedFieldFilterParameterInterface
      */
-    public function setFilterId(int $filterId): FeedFieldFilterParameterInterface;
+    public function setFilterId(string $filterId): FeedFieldFilterParameterInterface;
 
     /**
      * Get the name.

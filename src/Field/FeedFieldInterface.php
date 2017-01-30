@@ -14,34 +14,34 @@ interface FeedFieldInterface
     /**
      * Get the field id.
      *
-     * @return int
+     * @return string
      */
-    public function getFieldId(): int;
+    public function getFieldId(): string;
 
     /**
      * Set the field id.
      *
-     * @param int $fieldId
+     * @param string $fieldId
      *
      * @return FeedFieldInterface
      */
-    public function setFieldId(int $fieldId): FeedFieldInterface;
+    public function setFieldId(string $fieldId): FeedFieldInterface;
 
     /**
      * Get the feed id.
      *
-     * @return int
+     * @return string
      */
-    public function getFeedId(): int;
+    public function getFeedId(): string;
 
     /**
      * Set the feed id.
      *
-     * @param int $feedId
+     * @param string $feedId
      *
      * @return FeedFieldInterface
      */
-    public function setFeedId(int $feedId): FeedFieldInterface;
+    public function setFeedId(string $feedId): FeedFieldInterface;
 
     /**
      * Get the type.
