@@ -9,8 +9,8 @@ namespace WideFocus\Feed\Entity;
 use DateTimeInterface;
 use WideFocus\Feed\Entity\Condition\FeedConditionInterface;
 use WideFocus\Feed\Entity\Field\FeedFieldInterface;
-use WideFocus\Feed\Entity\Layout\FeedLayoutInterface;
-use WideFocus\Feed\Entity\Source\FeedSourceInterface;
+use WideFocus\Feed\Entity\Layout\FeedWriterParametersInterface;
+use WideFocus\Feed\Entity\Source\FeedSourceParametersInterface;
 
 /**
  * Contains all the information needed to write a feed.
@@ -57,13 +57,29 @@ interface FeedInterface
     public function getWriterType(): string;
 
     /**
-     * Set the writerType
+     * Set the writer type
      *
      * @param string $writerType
      *
      * @return FeedInterface
      */
     public function setWriterType(string $writerType): FeedInterface;
+
+    /**
+     * Get the source type.
+     *
+     * @return string
+     */
+    public function getSourceType(): string;
+
+    /**
+     * Set the source type.
+     *
+     * @param string $sourceType
+     *
+     * @return FeedInterface
+     */
+    public function setSourceType(string $sourceType): FeedInterface;
 
     /**
      * Check whether the feed is active.
@@ -146,34 +162,34 @@ interface FeedInterface
     public function setFields(array $fields): FeedInterface;
 
     /**
-     * Get the feed layout.
+     * Get the feed writer parameters.
      *
-     * @return FeedLayoutInterface
+     * @return FeedWriterParametersInterface
      */
-    public function getLayout(): FeedLayoutInterface;
+    public function getWriterParameters(): FeedWriterParametersInterface;
 
     /**
-     * Set the feed layout.
+     * Set the feed writer parameters.
      *
-     * @param FeedLayoutInterface $layout
+     * @param FeedWriterParametersInterface $parameters
      *
      * @return FeedInterface
      */
-    public function setLayout(FeedLayoutInterface $layout): FeedInterface;
+    public function setWriterParameters(FeedWriterParametersInterface $parameters): FeedInterface;
 
     /**
-     * Get the feed source.
+     * Get the feed source parameters.
      *
-     * @return FeedSourceInterface
+     * @return FeedSourceParametersInterface
      */
-    public function getSource(): FeedSourceInterface;
+    public function getSourceParameters(): FeedSourceParametersInterface;
 
     /**
-     * Set the feed source.
+     * Set the feed source parameters.
      *
-     * @param FeedSourceInterface $source
+     * @param FeedSourceParametersInterface $parameters
      *
      * @return FeedInterface
      */
-    public function setSource(FeedSourceInterface $source): FeedInterface;
+    public function setSourceParameters(FeedSourceParametersInterface $parameters): FeedInterface;
 }
