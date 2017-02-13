@@ -9,7 +9,7 @@ namespace WideFocus\Feed\Entity;
 use DateTimeInterface;
 use WideFocus\Feed\Entity\Condition\FeedConditionInterface;
 use WideFocus\Feed\Entity\Field\FeedFieldInterface;
-use WideFocus\Feed\Entity\Layout\FeedWriterParametersInterface;
+use WideFocus\Feed\Entity\Writer\FeedWriterParametersInterface;
 use WideFocus\Feed\Entity\Source\FeedSourceParametersInterface;
 
 /**
