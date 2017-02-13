@@ -4,7 +4,7 @@
  * http://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Entity\Layout;
+namespace WideFocus\Feed\Entity\Writer;
 
 use IteratorAggregate;
 
