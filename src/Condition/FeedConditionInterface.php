@@ -76,20 +76,20 @@ interface FeedConditionInterface
     public function setType(string $type): FeedConditionInterface;
 
     /**
-     * Get the code.
+     * Get the name.
      *
      * @return string
      */
-    public function getCode(): string;
+    public function getName(): string;
 
     /**
-     * Set the code.
+     * Set the name.
      *
-     * @param string $code
+     * @param string $name
      *
      * @return FeedConditionInterface
      */
-    public function setCode(string $code): FeedConditionInterface;
+    public function setName(string $name): FeedConditionInterface;
 
     /**
      * Get the value.

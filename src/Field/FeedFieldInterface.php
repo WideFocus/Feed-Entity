@@ -60,22 +60,6 @@ interface FeedFieldInterface
     public function setType(string $type): FeedFieldInterface;
 
     /**
-     * Get the code.
-     *
-     * @return string
-     */
-    public function getCode(): string;
-
-    /**
-     * Set the code.
-     *
-     * @param string $code
-     *
-     * @return FeedFieldInterface
-     */
-    public function setCode(string $code): FeedFieldInterface;
-
-    /**
      * Get the name.
      *
      * @return string
@@ -90,6 +74,22 @@ interface FeedFieldInterface
      * @return FeedFieldInterface
      */
     public function setName(string $name): FeedFieldInterface;
+
+    /**
+     * Get the label.
+     *
+     * @return string
+     */
+    public function getLabel(): string;
+
+    /**
+     * Set the label.
+     *
+     * @param string $label
+     *
+     * @return FeedFieldInterface
+     */
+    public function setLabel(string $label): FeedFieldInterface;
 
     /**
      * Get the sort order.
