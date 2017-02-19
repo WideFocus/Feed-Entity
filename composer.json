@@ -2,13 +2,13 @@
     "name": "widefocus/feed-entity",
     "description": "This package contains entities to describe the structure of a feed.",
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
     "prefer-stable": true,
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Ashoka de Wit",
-            "email": "contact@widefocus.net"
+            "email": "ashoka@widefocus.net"
         }
     ],
     "require": {
