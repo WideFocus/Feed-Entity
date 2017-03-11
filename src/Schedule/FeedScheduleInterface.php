@@ -27,7 +27,9 @@ interface FeedScheduleInterface
      *
      * @return FeedScheduleInterface
      */
-    public function setScheduleId(string $scheduleId): FeedScheduleInterface;
+    public function setScheduleId(
+        string $scheduleId
+    ): FeedScheduleInterface;
 
     /**
      * Get the feed id.
@@ -59,7 +61,9 @@ interface FeedScheduleInterface
      *
      * @return FeedScheduleInterface
      */
-    public function setExpression(string $expression): FeedScheduleInterface;
+    public function setExpression(
+        string $expression
+    ): FeedScheduleInterface;
 
     /**
      * Check whether the schedule is active.

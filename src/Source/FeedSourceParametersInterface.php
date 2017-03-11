@@ -28,7 +28,9 @@ interface FeedSourceParametersInterface extends IteratorAggregate
      *
      * @return FeedSourceParametersInterface
      */
-    public function setParametersId(string $parametersId): FeedSourceParametersInterface;
+    public function setParametersId(
+        string $parametersId
+    ): FeedSourceParametersInterface;
 
     /**
      * Get the id of the feed.
@@ -44,5 +46,7 @@ interface FeedSourceParametersInterface extends IteratorAggregate
      *
      * @return FeedSourceParametersInterface
      */
-    public function setFeedId(string $feedId): FeedSourceParametersInterface;
+    public function setFeedId(
+        string $feedId
+    ): FeedSourceParametersInterface;
 }

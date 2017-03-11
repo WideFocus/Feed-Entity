@@ -28,7 +28,9 @@ interface FeedWriterParametersInterface extends IteratorAggregate
      *
      * @return FeedWriterParametersInterface
      */
-    public function setParametersId(string $parametersId): FeedWriterParametersInterface;
+    public function setParametersId(
+        string $parametersId
+    ): FeedWriterParametersInterface;
 
     /**
      * Get the feed id.
@@ -44,5 +46,7 @@ interface FeedWriterParametersInterface extends IteratorAggregate
      *
      * @return FeedWriterParametersInterface
      */
-    public function setFeedId(string $feedId): FeedWriterParametersInterface;
+    public function setFeedId(
+        string $feedId
+    ): FeedWriterParametersInterface;
 }

@@ -25,7 +25,9 @@ interface FeedConditionInterface
      *
      * @return FeedConditionInterface
      */
-    public function setConditionId(string $conditionId): FeedConditionInterface;
+    public function setConditionId(
+        string $conditionId
+    ): FeedConditionInterface;
 
     /**
      * Get the parent id.

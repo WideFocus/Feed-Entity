@@ -26,7 +26,9 @@ interface FeedFieldFilterInterface
      *
      * @return FeedFieldFilterInterface
      */
-    public function setFilterId(string $filterId): FeedFieldFilterInterface;
+    public function setFilterId(
+        string $filterId
+    ): FeedFieldFilterInterface;
 
     /**
      * Get the field id.
@@ -42,7 +44,9 @@ interface FeedFieldFilterInterface
      *
      * @return FeedFieldFilterInterface
      */
-    public function setFieldId(string $fieldId): FeedFieldFilterInterface;
+    public function setFieldId(
+        string $fieldId
+    ): FeedFieldFilterInterface;
 
     /**
      * Get the filter type.
@@ -58,7 +62,9 @@ interface FeedFieldFilterInterface
      *
      * @return FeedFieldFilterInterface
      */
-    public function setFilterType(string $filterType): FeedFieldFilterInterface;
+    public function setFilterType(
+        string $filterType
+    ): FeedFieldFilterInterface;
 
     /**
      * Get the sort order.
@@ -74,7 +80,9 @@ interface FeedFieldFilterInterface
      *
      * @return FeedFieldFilterInterface
      */
-    public function setSortOrder(int $sortOrder): FeedFieldFilterInterface;
+    public function setSortOrder(
+        int $sortOrder
+    ): FeedFieldFilterInterface;
 
     /**
      * Get the parameters.
@@ -90,5 +98,7 @@ interface FeedFieldFilterInterface
      *
      * @return FeedFieldFilterInterface
      */
-    public function setParameters(array $parameters): FeedFieldFilterInterface;
+    public function setParameters(
+        array $parameters
+    ): FeedFieldFilterInterface;
 }

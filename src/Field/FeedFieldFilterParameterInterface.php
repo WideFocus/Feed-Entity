@@ -26,7 +26,9 @@ interface FeedFieldFilterParameterInterface
      *
      * @return FeedFieldFilterParameterInterface
      */
-    public function setParameterId(string $parameterId): FeedFieldFilterParameterInterface;
+    public function setParameterId(
+        string $parameterId
+    ): FeedFieldFilterParameterInterface;
 
     /**
      * Get the filter id.
@@ -42,7 +44,9 @@ interface FeedFieldFilterParameterInterface
      *
      * @return FeedFieldFilterParameterInterface
      */
-    public function setFilterId(string $filterId): FeedFieldFilterParameterInterface;
+    public function setFilterId(
+        string $filterId
+    ): FeedFieldFilterParameterInterface;
 
     /**
      * Get the name.
@@ -58,7 +62,9 @@ interface FeedFieldFilterParameterInterface
      *
      * @return FeedFieldFilterParameterInterface
      */
-    public function setName(string $name): FeedFieldFilterParameterInterface;
+    public function setName(
+        string $name
+    ): FeedFieldFilterParameterInterface;
 
     /**
      * Get the value.
@@ -74,5 +80,7 @@ interface FeedFieldFilterParameterInterface
      *
      * @return FeedFieldFilterParameterInterface
      */
-    public function setValue(string $value): FeedFieldFilterParameterInterface;
+    public function setValue(
+        string $value
+    ): FeedFieldFilterParameterInterface;
 }

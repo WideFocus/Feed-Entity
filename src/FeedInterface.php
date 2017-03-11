@@ -111,7 +111,9 @@ interface FeedInterface
      *
      * @return FeedInterface
      */
-    public function setCreatedAt(DateTimeInterface $createdAt): FeedInterface;
+    public function setCreatedAt(
+        DateTimeInterface $createdAt
+    ): FeedInterface;
 
     /**
      * Get the update date and time.
@@ -127,7 +129,9 @@ interface FeedInterface
      *
      * @return FeedInterface
      */
-    public function setUpdatedAt(DateTimeInterface $updatedAt): FeedInterface;
+    public function setUpdatedAt(
+        DateTimeInterface $updatedAt
+    ): FeedInterface;
 
     /**
      * Get the conditions.
@@ -175,7 +179,9 @@ interface FeedInterface
      *
      * @return FeedInterface
      */
-    public function setWriterParameters(FeedWriterParametersInterface $parameters): FeedInterface;
+    public function setWriterParameters(
+        FeedWriterParametersInterface $parameters
+    ): FeedInterface;
 
     /**
      * Get the feed source parameters.
@@ -191,5 +197,7 @@ interface FeedInterface
      *
      * @return FeedInterface
      */
-    public function setSourceParameters(FeedSourceParametersInterface $parameters): FeedInterface;
+    public function setSourceParameters(
+        FeedSourceParametersInterface $parameters
+    ): FeedInterface;
 }
