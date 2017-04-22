@@ -4,9 +4,7 @@
  * https://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Entity\Schedule;
-
-use WideFocus\Feed\Entity\FeedInterface;
+namespace WideFocus\Feed\Entity;
 
 /**
  * Contains information about when a feed should be generated.
@@ -75,11 +73,11 @@ interface FeedScheduleInterface
     /**
      * Set whether the schedule is active.
      *
-     * @param bool $isActive
+     * @param bool $active
      *
      * @return FeedScheduleInterface
      */
-    public function setIsActive(bool $isActive): FeedScheduleInterface;
+    public function setIsActive(bool $active): FeedScheduleInterface;
 
     /**
      * Get the feed.

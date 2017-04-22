@@ -4,7 +4,9 @@
  * https://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Entity\Condition;
+namespace WideFocus\Feed\Entity;
+
+use WideFocus\Parameters\ParameterBagInterface;
 
 /**
  * Contains information about how to validate a feed item.
@@ -94,20 +96,22 @@ interface FeedConditionInterface
     public function setName(string $name): FeedConditionInterface;
 
     /**
-     * Get the value.
+     * Get the constraints.
      *
-     * @return string
+     * @return ParameterBagInterface
      */
-    public function getValue(): string;
+    public function getConstraints(): ParameterBagInterface;
 
     /**
-     * Set the value.
+     * Set the constraints
      *
-     * @param string $value
+     * @param ParameterBagInterface $constraints
      *
      * @return FeedConditionInterface
      */
-    public function setValue(string $value): FeedConditionInterface;
+    public function setConstraints(
+        ParameterBagInterface $constraints
+    ): FeedConditionInterface;
 
     /**
      * Get the operator.

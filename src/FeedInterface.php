@@ -7,10 +7,7 @@
 namespace WideFocus\Feed\Entity;
 
 use DateTimeInterface;
-use WideFocus\Feed\Entity\Condition\FeedConditionInterface;
-use WideFocus\Feed\Entity\Field\FeedFieldInterface;
-use WideFocus\Feed\Entity\Writer\FeedWriterParametersInterface;
-use WideFocus\Feed\Entity\Source\FeedSourceParametersInterface;
+use WideFocus\Parameters\ParameterBagInterface;
 
 /**
  * Contains all the information needed to write a feed.
@@ -48,38 +45,6 @@ interface FeedInterface
      * @return FeedInterface
      */
     public function setName(string $name): FeedInterface;
-
-    /**
-     * Get the writer type.
-     *
-     * @return string
-     */
-    public function getWriterType(): string;
-
-    /**
-     * Set the writer type
-     *
-     * @param string $writerType
-     *
-     * @return FeedInterface
-     */
-    public function setWriterType(string $writerType): FeedInterface;
-
-    /**
-     * Get the source type.
-     *
-     * @return string
-     */
-    public function getSourceType(): string;
-
-    /**
-     * Set the source type.
-     *
-     * @param string $sourceType
-     *
-     * @return FeedInterface
-     */
-    public function setSourceType(string $sourceType): FeedInterface;
 
     /**
      * Check whether the feed is active.
@@ -133,6 +98,75 @@ interface FeedInterface
         DateTimeInterface $updatedAt
     ): FeedInterface;
 
+
+    /**
+     * Get the source type.
+     *
+     * @return string
+     */
+    public function getSourceType(): string;
+
+    /**
+     * Set the source type.
+     *
+     * @param string $sourceType
+     *
+     * @return FeedInterface
+     */
+    public function setSourceType(string $sourceType): FeedInterface;
+
+    /**
+     * Get the feed source parameters.
+     *
+     * @return ParameterBagInterface
+     */
+    public function getSourceParameters(): ParameterBagInterface;
+
+    /**
+     * Set the feed source parameters.
+     *
+     * @param ParameterBagInterface $parameters
+     *
+     * @return FeedInterface
+     */
+    public function setSourceParameters(
+        ParameterBagInterface $parameters
+    ): FeedInterface;
+
+    /**
+     * Get the writer type.
+     *
+     * @return string
+     */
+    public function getWriterType(): string;
+
+    /**
+     * Set the writer type
+     *
+     * @param string $writerType
+     *
+     * @return FeedInterface
+     */
+    public function setWriterType(string $writerType): FeedInterface;
+
+    /**
+     * Get the feed writer parameters.
+     *
+     * @return ParameterBagInterface
+     */
+    public function getWriterParameters(): ParameterBagInterface;
+
+    /**
+     * Set the feed writer parameters.
+     *
+     * @param ParameterBagInterface $parameters
+     *
+     * @return FeedInterface
+     */
+    public function setWriterParameters(
+        ParameterBagInterface $parameters
+    ): FeedInterface;
+
     /**
      * Get the conditions.
      *
@@ -164,40 +198,4 @@ interface FeedInterface
      * @return FeedInterface
      */
     public function setFields(array $fields): FeedInterface;
-
-    /**
-     * Get the feed writer parameters.
-     *
-     * @return FeedWriterParametersInterface
-     */
-    public function getWriterParameters(): FeedWriterParametersInterface;
-
-    /**
-     * Set the feed writer parameters.
-     *
-     * @param FeedWriterParametersInterface $parameters
-     *
-     * @return FeedInterface
-     */
-    public function setWriterParameters(
-        FeedWriterParametersInterface $parameters
-    ): FeedInterface;
-
-    /**
-     * Get the feed source parameters.
-     *
-     * @return FeedSourceParametersInterface
-     */
-    public function getSourceParameters(): FeedSourceParametersInterface;
-
-    /**
-     * Set the feed source parameters.
-     *
-     * @param FeedSourceParametersInterface $parameters
-     *
-     * @return FeedInterface
-     */
-    public function setSourceParameters(
-        FeedSourceParametersInterface $parameters
-    ): FeedInterface;
 }

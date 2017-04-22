@@ -4,7 +4,7 @@
  * https://www.widefocus.net
  */
 
-namespace WideFocus\Feed\Entity\Field;
+namespace WideFocus\Feed\Entity;
 
 /**
  * Contains information about a field that is used in a feed.
