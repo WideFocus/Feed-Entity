@@ -26,25 +26,9 @@ interface FeedFieldFilterInterface
      *
      * @param string $type
      *
-     * @return FeedFieldFilterInterface
+     * @return void
      */
-    public function setType(string $type): FeedFieldFilterInterface;
-
-    /**
-     * Get the sort order.
-     *
-     * @return int
-     */
-    public function getSortOrder(): int;
-
-    /**
-     * Set the sort order.
-     *
-     * @param int $sortOrder
-     *
-     * @return FeedFieldFilterInterface
-     */
-    public function setSortOrder(int $sortOrder): FeedFieldFilterInterface;
+    public function setType(string $type);
 
     /**
      * Get the parameters.
@@ -58,9 +42,23 @@ interface FeedFieldFilterInterface
      *
      * @param ParameterBagInterface $parameters
      *
-     * @return FeedFieldFilterInterface
+     * @return void
      */
-    public function setParameters(
-        ParameterBagInterface $parameters
-    ): FeedFieldFilterInterface;
+    public function setParameters(ParameterBagInterface $parameters);
+
+    /**
+     * Get the sort order.
+     *
+     * @return int
+     */
+    public function getSortOrder(): int;
+
+    /**
+     * Set the sort order.
+     *
+     * @param int $sortOrder
+     *
+     * @return void
+     */
+    public function setSortOrder(int $sortOrder);
 }

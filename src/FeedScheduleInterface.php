@@ -14,36 +14,34 @@ interface FeedScheduleInterface
     /**
      * Get the schedule id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getScheduleId(): string;
+    public function getScheduleId();
 
     /**
      * Set the schedule id.
      *
      * @param string $scheduleId
      *
-     * @return FeedScheduleInterface
+     * @return void
      */
-    public function setScheduleId(
-        string $scheduleId
-    ): FeedScheduleInterface;
+    public function setScheduleId(string $scheduleId);
 
     /**
      * Get the feed id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFeedId(): string;
+    public function getFeedId();
 
     /**
      * Set the feed id.
      *
      * @param string $feedId
      *
-     * @return FeedScheduleInterface
+     * @return void
      */
-    public function setFeedId(string $feedId): FeedScheduleInterface;
+    public function setFeedId(string $feedId);
 
     /**
      * Get the schedule expression.
@@ -57,11 +55,9 @@ interface FeedScheduleInterface
      *
      * @param string $expression
      *
-     * @return FeedScheduleInterface
+     * @return void
      */
-    public function setExpression(
-        string $expression
-    ): FeedScheduleInterface;
+    public function setExpression(string $expression);
 
     /**
      * Check whether the schedule is active.
@@ -75,9 +71,9 @@ interface FeedScheduleInterface
      *
      * @param bool $active
      *
-     * @return FeedScheduleInterface
+     * @return void
      */
-    public function setIsActive(bool $active): FeedScheduleInterface;
+    public function setIsActive(bool $active);
 
     /**
      * Get the feed.
@@ -91,7 +87,7 @@ interface FeedScheduleInterface
      *
      * @param FeedInterface $feed
      *
-     * @return FeedScheduleInterface
+     * @return void
      */
-    public function setFeed(FeedInterface $feed): FeedScheduleInterface;
+    public function setFeed(FeedInterface $feed);
 }

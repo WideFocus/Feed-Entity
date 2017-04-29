@@ -16,52 +16,50 @@ interface FeedConditionInterface
     /**
      * Get the condition id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getConditionId(): string;
+    public function getConditionId();
 
     /**
      * Set the condition id.
      *
      * @param string $conditionId
      *
-     * @return FeedConditionInterface
+     * @return void
      */
-    public function setConditionId(
-        string $conditionId
-    ): FeedConditionInterface;
+    public function setConditionId(string $conditionId);
 
     /**
      * Get the parent id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getParentId(): string;
+    public function getParentId();
 
     /**
      * Set the parent id.
      *
      * @param string $parentId
      *
-     * @return FeedConditionInterface
+     * @return void
      */
-    public function setParentId(string $parentId): FeedConditionInterface;
+    public function setParentId(string $parentId);
 
     /**
      * Get the feed id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFeedId(): string;
+    public function getFeedId();
 
     /**
      * Set the feed id.
      *
      * @param string $feedId
      *
-     * @return FeedConditionInterface
+     * @return void
      */
-    public function setFeedId(string $feedId): FeedConditionInterface;
+    public function setFeedId(string $feedId);
 
     /**
      * Get the type.
@@ -75,9 +73,9 @@ interface FeedConditionInterface
      *
      * @param string $type
      *
-     * @return FeedConditionInterface
+     * @return void
      */
-    public function setType(string $type): FeedConditionInterface;
+    public function setType(string $type);
 
     /**
      * Get the name.
@@ -91,27 +89,9 @@ interface FeedConditionInterface
      *
      * @param string $name
      *
-     * @return FeedConditionInterface
+     * @return void
      */
-    public function setName(string $name): FeedConditionInterface;
-
-    /**
-     * Get the constraints.
-     *
-     * @return ParameterBagInterface
-     */
-    public function getConstraints(): ParameterBagInterface;
-
-    /**
-     * Set the constraints
-     *
-     * @param ParameterBagInterface $constraints
-     *
-     * @return FeedConditionInterface
-     */
-    public function setConstraints(
-        ParameterBagInterface $constraints
-    ): FeedConditionInterface;
+    public function setName(string $name);
 
     /**
      * Get the operator.
@@ -125,23 +105,39 @@ interface FeedConditionInterface
      *
      * @param string $operator
      *
-     * @return FeedConditionInterface
+     * @return void
      */
-    public function setOperator(string $operator): FeedConditionInterface;
+    public function setOperator(string $operator);
+
+    /**
+     * Get the constraints.
+     *
+     * @return ParameterBagInterface
+     */
+    public function getConstraints(): ParameterBagInterface;
+
+    /**
+     * Set the constraints
+     *
+     * @param ParameterBagInterface $constraints
+     *
+     * @return void
+     */
+    public function setConstraints(ParameterBagInterface $constraints);
 
     /**
      * Get the children.
      *
-     * @return FeedConditionInterface[]
+     * @return void[]
      */
     public function getChildren(): array;
 
     /**
      * Set the children.
      *
-     * @param FeedConditionInterface[] $children
+     * @param FeedConditionInterface[] ...$children
      *
-     * @return FeedConditionInterface
+     * @return void
      */
-    public function setChildren(array $children): FeedConditionInterface;
+    public function setChildren(FeedConditionInterface ...$children);
 }

@@ -17,18 +17,18 @@ interface FeedInterface
     /**
      * Get the feed id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFeedId(): string;
+    public function getFeedId();
 
     /**
      * Set the feed id.
      *
      * @param string $feedId
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setFeedId(string $feedId): FeedInterface;
+    public function setFeedId(string $feedId);
 
     /**
      * Get the feed name.
@@ -42,9 +42,9 @@ interface FeedInterface
      *
      * @param string $name
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setName(string $name): FeedInterface;
+    public function setName(string $name);
 
     /**
      * Check whether the feed is active.
@@ -56,11 +56,11 @@ interface FeedInterface
     /**
      * Set whether the feed is active.
      *
-     * @param bool $isActive
+     * @param bool $active
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setIsActive(bool $isActive): FeedInterface;
+    public function setIsActive(bool $active);
 
     /**
      * Get the creation date and time.
@@ -74,11 +74,9 @@ interface FeedInterface
      *
      * @param DateTimeInterface $createdAt
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setCreatedAt(
-        DateTimeInterface $createdAt
-    ): FeedInterface;
+    public function setCreatedAt(DateTimeInterface $createdAt);
 
     /**
      * Get the update date and time.
@@ -92,12 +90,9 @@ interface FeedInterface
      *
      * @param DateTimeInterface $updatedAt
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setUpdatedAt(
-        DateTimeInterface $updatedAt
-    ): FeedInterface;
-
+    public function setUpdatedAt(DateTimeInterface $updatedAt);
 
     /**
      * Get the source type.
@@ -111,9 +106,9 @@ interface FeedInterface
      *
      * @param string $sourceType
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setSourceType(string $sourceType): FeedInterface;
+    public function setSourceType(string $sourceType);
 
     /**
      * Get the feed source parameters.
@@ -127,11 +122,9 @@ interface FeedInterface
      *
      * @param ParameterBagInterface $parameters
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setSourceParameters(
-        ParameterBagInterface $parameters
-    ): FeedInterface;
+    public function setSourceParameters(ParameterBagInterface $parameters);
 
     /**
      * Get the writer type.
@@ -145,9 +138,9 @@ interface FeedInterface
      *
      * @param string $writerType
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setWriterType(string $writerType): FeedInterface;
+    public function setWriterType(string $writerType);
 
     /**
      * Get the feed writer parameters.
@@ -161,11 +154,9 @@ interface FeedInterface
      *
      * @param ParameterBagInterface $parameters
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setWriterParameters(
-        ParameterBagInterface $parameters
-    ): FeedInterface;
+    public function setWriterParameters(ParameterBagInterface $parameters);
 
     /**
      * Get the conditions.
@@ -177,11 +168,11 @@ interface FeedInterface
     /**
      * Set the conditions.
      *
-     * @param FeedConditionInterface[] $conditions
+     * @param FeedConditionInterface[] ...$conditions
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setConditions(array $conditions): FeedInterface;
+    public function setConditions(FeedConditionInterface ...$conditions);
 
     /**
      * Get the feed fields.
@@ -193,9 +184,9 @@ interface FeedInterface
     /**
      * Set the feed fields.
      *
-     * @param FeedFieldInterface[] $fields
+     * @param FeedFieldInterface[] ...$fields
      *
-     * @return FeedInterface
+     * @return void
      */
-    public function setFields(array $fields): FeedInterface;
+    public function setFields(FeedFieldInterface ...$fields);
 }

@@ -14,34 +14,34 @@ interface FeedFieldInterface
     /**
      * Get the field id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFieldId(): string;
+    public function getFieldId();
 
     /**
      * Set the field id.
      *
      * @param string $fieldId
      *
-     * @return FeedFieldInterface
+     * @return void
      */
-    public function setFieldId(string $fieldId): FeedFieldInterface;
+    public function setFieldId(string $fieldId);
 
     /**
      * Get the feed id.
      *
-     * @return string
+     * @return string|null
      */
-    public function getFeedId(): string;
+    public function getFeedId();
 
     /**
      * Set the feed id.
      *
      * @param string $feedId
      *
-     * @return FeedFieldInterface
+     * @return void
      */
-    public function setFeedId(string $feedId): FeedFieldInterface;
+    public function setFeedId(string $feedId);
 
     /**
      * Get the type.
@@ -55,9 +55,9 @@ interface FeedFieldInterface
      *
      * @param string $type
      *
-     * @return FeedFieldInterface
+     * @return void
      */
-    public function setType(string $type): FeedFieldInterface;
+    public function setType(string $type);
 
     /**
      * Get the name.
@@ -71,9 +71,9 @@ interface FeedFieldInterface
      *
      * @param string $name
      *
-     * @return FeedFieldInterface
+     * @return void
      */
-    public function setName(string $name): FeedFieldInterface;
+    public function setName(string $name);
 
     /**
      * Get the label.
@@ -87,9 +87,9 @@ interface FeedFieldInterface
      *
      * @param string $label
      *
-     * @return FeedFieldInterface
+     * @return void
      */
-    public function setLabel(string $label): FeedFieldInterface;
+    public function setLabel(string $label);
 
     /**
      * Get the sort order.
@@ -103,9 +103,9 @@ interface FeedFieldInterface
      *
      * @param int $sortOrder
      *
-     * @return FeedFieldInterface
+     * @return void
      */
-    public function setSortOrder(int $sortOrder): FeedFieldInterface;
+    public function setSortOrder(int $sortOrder);
 
     /**
      * Get the filters.
@@ -117,9 +117,9 @@ interface FeedFieldInterface
     /**
      * Set the filters.
      *
-     * @param FeedFieldFilterInterface[] $filters
+     * @param FeedFieldFilterInterface[] ...$filters
      *
-     * @return FeedFieldInterface
+     * @return void
      */
-    public function setFilters(array $filters): FeedFieldInterface;
+    public function setFilters(FeedFieldFilterInterface ...$filters);
 }
