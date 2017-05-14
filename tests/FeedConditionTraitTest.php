@@ -19,12 +19,6 @@ class FeedConditionTraitTest extends TestCase
     /**
      * @return void
      *
-     * @covers ::getConditionId
-     * @covers ::setConditionId
-     * @covers ::getParentId
-     * @covers ::setParentId
-     * @covers ::getFeedId
-     * @covers ::setFeedId
      * @covers ::getType
      * @covers ::setType
      * @covers ::getName
@@ -40,19 +34,6 @@ class FeedConditionTraitTest extends TestCase
     {
         /** @var FeedConditionInterface $condition */
         $condition = $this->getMockForTrait(FeedConditionTrait::class);
-
-        $this->assertNull($condition->getConditionId());
-        $this->assertNull($condition->getParentId());
-        $this->assertNull($condition->getFeedId());
-
-        $condition->setConditionId(42);
-        $this->assertEquals(42, $condition->getConditionId());
-
-        $condition->setParentId(43);
-        $this->assertEquals(43, $condition->getParentId());
-
-        $condition->setFeedId(44);
-        $this->assertEquals(44, $condition->getFeedId());
 
         $condition->setType('foo_type');
         $this->assertEquals('foo_type', $condition->getType());

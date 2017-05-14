@@ -6,7 +6,6 @@
 
 namespace WideFocus\Feed\Entity\Tests;
 
-use DateTime;
 use PHPUnit\Framework\TestCase;
 use WideFocus\Feed\Entity\FeedConditionInterface;
 use WideFocus\Feed\Entity\FeedFieldInterface;
@@ -22,16 +21,6 @@ class FeedTraitTest extends TestCase
     /**
      * @return void
      *
-     * @covers ::getFeedId
-     * @covers ::setFeedId
-     * @covers ::getName
-     * @covers ::setName
-     * @covers ::isActive
-     * @covers ::setIsActive
-     * @covers ::getCreatedAt
-     * @covers ::setCreatedAt
-     * @covers ::getUpdatedAt
-     * @covers ::setUpdatedAt
      * @covers ::getSourceType
      * @covers ::setSourceType
      * @covers ::getSourceParameters
@@ -49,28 +38,6 @@ class FeedTraitTest extends TestCase
     {
         /** @var FeedInterface $feed */
         $feed = $this->getMockForTrait(FeedTrait::class);
-
-        $this->assertNull($feed->getFeedId());
-
-        $feed->setFeedId(42);
-        $this->assertEquals(42, $feed->getFeedId());
-
-        $feed->setName('foo_name');
-        $this->assertEquals('foo_name', $feed->getName());
-
-        $feed->setIsActive(true);
-        $this->assertTrue($feed->isActive());
-
-        $feed->setIsActive(false);
-        $this->assertFalse($feed->isActive());
-        
-        $created = $this->createMock(DateTime::class);
-        $feed->setCreatedAt($created);
-        $this->assertSame($created, $feed->getCreatedAt());
-
-        $updated = $this->createMock(DateTime::class);
-        $feed->setUpdatedAt($updated);
-        $this->assertSame($updated, $feed->getUpdatedAt());
 
         $feed->setSourceType('foo_source_type');
         $this->assertEquals('foo_source_type', $feed->getSourceType());

@@ -19,18 +19,12 @@ class FeedFieldTraitTest extends TestCase
     /**
      * @return void
      *
-     * @covers ::getFieldId
-     * @covers ::setFieldId
-     * @covers ::getFeedId
-     * @covers ::setFeedId
      * @covers ::getType
      * @covers ::setType
      * @covers ::getName
      * @covers ::setName
      * @covers ::getLabel
      * @covers ::setLabel
-     * @covers ::getSortOrder
-     * @covers ::setSortOrder
      * @covers ::getFilters
      * @covers ::setFilters
      */
@@ -38,15 +32,6 @@ class FeedFieldTraitTest extends TestCase
     {
         /** @var FeedFieldInterface $field */
         $field = $this->getMockForTrait(FeedFieldTrait::class);
-
-        $this->assertNull($field->getFieldId());
-        $this->assertNull($field->getFeedId());
-
-        $field->setFieldId(42);
-        $this->assertEquals(42, $field->getFieldId());
-
-        $field->setFeedId(43);
-        $this->assertEquals(43, $field->getFeedId());
 
         $field->setType('foo_type');
         $this->assertEquals('foo_type', $field->getType());
@@ -56,9 +41,6 @@ class FeedFieldTraitTest extends TestCase
 
         $field->setLabel('foo_label');
         $this->assertEquals('foo_label', $field->getLabel());
-
-        $field->setSortOrder(44);
-        $this->assertEquals(44, $field->getSortOrder());
 
         $filters = [
             $this->createMock(FeedFieldFilterInterface::class),
