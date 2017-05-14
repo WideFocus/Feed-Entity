@@ -12,38 +12,6 @@ namespace WideFocus\Feed\Entity;
 interface FeedScheduleInterface
 {
     /**
-     * Get the schedule id.
-     *
-     * @return string|null
-     */
-    public function getScheduleId();
-
-    /**
-     * Set the schedule id.
-     *
-     * @param string $scheduleId
-     *
-     * @return void
-     */
-    public function setScheduleId(string $scheduleId);
-
-    /**
-     * Get the feed id.
-     *
-     * @return string|null
-     */
-    public function getFeedId();
-
-    /**
-     * Set the feed id.
-     *
-     * @param string $feedId
-     *
-     * @return void
-     */
-    public function setFeedId(string $feedId);
-
-    /**
      * Get the schedule expression.
      *
      * @return string
@@ -58,22 +26,6 @@ interface FeedScheduleInterface
      * @return void
      */
     public function setExpression(string $expression);
-
-    /**
-     * Check whether the schedule is active.
-     *
-     * @return bool
-     */
-    public function isActive(): bool;
-
-    /**
-     * Set whether the schedule is active.
-     *
-     * @param bool $active
-     *
-     * @return void
-     */
-    public function setIsActive(bool $active);
 
     /**
      * Get the feed.

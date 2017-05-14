@@ -14,54 +14,6 @@ use WideFocus\Parameters\ParameterBagInterface;
 interface FeedConditionInterface
 {
     /**
-     * Get the condition id.
-     *
-     * @return string|null
-     */
-    public function getConditionId();
-
-    /**
-     * Set the condition id.
-     *
-     * @param string $conditionId
-     *
-     * @return void
-     */
-    public function setConditionId(string $conditionId);
-
-    /**
-     * Get the parent id.
-     *
-     * @return string|null
-     */
-    public function getParentId();
-
-    /**
-     * Set the parent id.
-     *
-     * @param string $parentId
-     *
-     * @return void
-     */
-    public function setParentId(string $parentId);
-
-    /**
-     * Get the feed id.
-     *
-     * @return string|null
-     */
-    public function getFeedId();
-
-    /**
-     * Set the feed id.
-     *
-     * @param string $feedId
-     *
-     * @return void
-     */
-    public function setFeedId(string $feedId);
-
-    /**
      * Get the type.
      *
      * @return string
@@ -128,7 +80,7 @@ interface FeedConditionInterface
     /**
      * Get the children.
      *
-     * @return void[]
+     * @return FeedConditionInterface[]
      */
     public function getChildren(): array;
 

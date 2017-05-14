@@ -16,21 +16,6 @@ trait FeedConditionTrait
     /**
      * @var string
      */
-    private $conditionId;
-
-    /**
-     * @var string
-     */
-    private $parentId;
-
-    /**
-     * @var string
-     */
-    private $feedId;
-
-    /**
-     * @var string
-     */
     private $type = '';
 
     /**
@@ -52,72 +37,6 @@ trait FeedConditionTrait
      * @var FeedConditionInterface[]
      */
     private $children = [];
-
-    /**
-     * Get the condition id.
-     *
-     * @return string|null
-     */
-    public function getConditionId()
-    {
-        return $this->conditionId;
-    }
-
-    /**
-     * Set the condition id.
-     *
-     * @param string $conditionId
-     *
-     * @return void
-     */
-    public function setConditionId(string $conditionId)
-    {
-        $this->conditionId = $conditionId;
-    }
-
-    /**
-     * Get the parent id.
-     *
-     * @return string|null
-     */
-    public function getParentId()
-    {
-        return $this->parentId;
-    }
-
-    /**
-     * Set the parent id.
-     *
-     * @param string $parentId
-     *
-     * @return void
-     */
-    public function setParentId(string $parentId)
-    {
-        $this->parentId = $parentId;
-    }
-
-    /**
-     * Get the feed id.
-     *
-     * @return string|null
-     */
-    public function getFeedId()
-    {
-        return $this->feedId;
-    }
-
-    /**
-     * Set the feed id.
-     *
-     * @param string $feedId
-     *
-     * @return void
-     */
-    public function setFeedId(string $feedId)
-    {
-        $this->feedId = $feedId;
-    }
 
     /**
      * Get the type.
@@ -210,7 +129,7 @@ trait FeedConditionTrait
     /**
      * Get the children.
      *
-     * @return void[]
+     * @return FeedConditionInterface[]
      */
     public function getChildren(): array
     {

@@ -6,7 +6,6 @@
 
 namespace WideFocus\Feed\Entity;
 
-use DateTimeInterface;
 use WideFocus\Parameters\ParameterBagInterface;
 
 /**
@@ -14,31 +13,6 @@ use WideFocus\Parameters\ParameterBagInterface;
  */
 trait FeedTrait
 {
-    /**
-     * @var string
-     */
-    private $feedId;
-
-    /**
-     * @var string
-     */
-    private $name = '';
-
-    /**
-     * @var bool
-     */
-    private $active = true;
-
-    /**
-     * @var DateTimeInterface
-     */
-    private $createdAt;
-
-    /**
-     * @var DateTimeInterface
-     */
-    private $updatedAt;
-
     /**
      * @var string
      */
@@ -68,116 +42,6 @@ trait FeedTrait
      * @var FeedConditionInterface[]
      */
     private $conditions = [];
-
-    /**
-     * Get the feed id.
-     *
-     * @return string|null
-     */
-    public function getFeedId()
-    {
-        return $this->feedId;
-    }
-
-    /**
-     * Set the feed id.
-     *
-     * @param string $feedId
-     *
-     * @return void
-     */
-    public function setFeedId(string $feedId)
-    {
-        $this->feedId = $feedId;
-    }
-
-    /**
-     * Get the feed name.
-     *
-     * @return string
-     */
-    public function getName(): string
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set the feed name.
-     *
-     * @param string $name
-     *
-     * @return void
-     */
-    public function setName(string $name)
-    {
-        $this->name = $name;
-    }
-
-    /**
-     * Check whether the feed is active.
-     *
-     * @return bool
-     */
-    public function isActive(): bool
-    {
-        return $this->active;
-    }
-
-    /**
-     * Set whether the feed is active.
-     *
-     * @param bool $active
-     *
-     * @return void
-     */
-    public function setIsActive(bool $active)
-    {
-        $this->active = $active;
-    }
-
-    /**
-     * Get the creation date and time.
-     *
-     * @return DateTimeInterface
-     */
-    public function getCreatedAt(): DateTimeInterface
-    {
-        return $this->createdAt;
-    }
-
-    /**
-     * Set the creation date and time.
-     *
-     * @param DateTimeInterface $createdAt
-     *
-     * @return void
-     */
-    public function setCreatedAt(DateTimeInterface $createdAt)
-    {
-        $this->createdAt = $createdAt;
-    }
-
-    /**
-     * Get the update date and time.
-     *
-     * @return DateTimeInterface
-     */
-    public function getUpdatedAt(): DateTimeInterface
-    {
-        return $this->updatedAt;
-    }
-
-    /**
-     * Set the update date and time.
-     *
-     * @param DateTimeInterface $updatedAt
-     *
-     * @return void
-     */
-    public function setUpdatedAt(DateTimeInterface $updatedAt)
-    {
-        $this->updatedAt = $updatedAt;
-    }
 
     /**
      * Get the source type.

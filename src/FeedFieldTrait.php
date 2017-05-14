@@ -14,16 +14,6 @@ trait FeedFieldTrait
     /**
      * @var string
      */
-    private $fieldId;
-
-    /**
-     * @var string
-     */
-    private $feedId;
-
-    /**
-     * @var string
-     */
     private $type = '';
 
     /**
@@ -40,55 +30,6 @@ trait FeedFieldTrait
      * @var FeedFieldFilterInterface[]
      */
     private $filters = [];
-
-    /**
-     * @var int
-     */
-    private $sortOrder = 0;
-
-    /**
-     * Get the field id.
-     *
-     * @return string|null
-     */
-    public function getFieldId()
-    {
-        return $this->fieldId;
-    }
-
-    /**
-     * Set the field id.
-     *
-     * @param string $fieldId
-     *
-     * @return void
-     */
-    public function setFieldId(string $fieldId)
-    {
-        $this->fieldId = $fieldId;
-    }
-
-    /**
-     * Get the feed id.
-     *
-     * @return string|null
-     */
-    public function getFeedId()
-    {
-        return $this->feedId;
-    }
-
-    /**
-     * Set the feed id.
-     *
-     * @param string $feedId
-     *
-     * @return void
-     */
-    public function setFeedId(string $feedId)
-    {
-        $this->feedId = $feedId;
-    }
 
     /**
      * Get the type.
@@ -176,27 +117,5 @@ trait FeedFieldTrait
     public function setFilters(FeedFieldFilterInterface ...$filters)
     {
         $this->filters = $filters;
-    }
-
-    /**
-     * Get the sort order.
-     *
-     * @return int
-     */
-    public function getSortOrder(): int
-    {
-        return $this->sortOrder;
-    }
-
-    /**
-     * Set the sort order.
-     *
-     * @param int $sortOrder
-     *
-     * @return void
-     */
-    public function setSortOrder(int $sortOrder)
-    {
-        $this->sortOrder = $sortOrder;
     }
 }

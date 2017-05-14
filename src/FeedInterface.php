@@ -6,7 +6,6 @@
 
 namespace WideFocus\Feed\Entity;
 
-use DateTimeInterface;
 use WideFocus\Parameters\ParameterBagInterface;
 
 /**
@@ -14,86 +13,6 @@ use WideFocus\Parameters\ParameterBagInterface;
  */
 interface FeedInterface
 {
-    /**
-     * Get the feed id.
-     *
-     * @return string|null
-     */
-    public function getFeedId();
-
-    /**
-     * Set the feed id.
-     *
-     * @param string $feedId
-     *
-     * @return void
-     */
-    public function setFeedId(string $feedId);
-
-    /**
-     * Get the feed name.
-     *
-     * @return string
-     */
-    public function getName(): string;
-
-    /**
-     * Set the feed name.
-     *
-     * @param string $name
-     *
-     * @return void
-     */
-    public function setName(string $name);
-
-    /**
-     * Check whether the feed is active.
-     *
-     * @return bool
-     */
-    public function isActive(): bool;
-
-    /**
-     * Set whether the feed is active.
-     *
-     * @param bool $active
-     *
-     * @return void
-     */
-    public function setIsActive(bool $active);
-
-    /**
-     * Get the creation date and time.
-     *
-     * @return DateTimeInterface
-     */
-    public function getCreatedAt(): DateTimeInterface;
-
-    /**
-     * Set the creation date and time.
-     *
-     * @param DateTimeInterface $createdAt
-     *
-     * @return void
-     */
-    public function setCreatedAt(DateTimeInterface $createdAt);
-
-    /**
-     * Get the update date and time.
-     *
-     * @return DateTimeInterface
-     */
-    public function getUpdatedAt(): DateTimeInterface;
-
-    /**
-     * Set the update date and time.
-     *
-     * @param DateTimeInterface $updatedAt
-     *
-     * @return void
-     */
-    public function setUpdatedAt(DateTimeInterface $updatedAt);
-
     /**
      * Get the source type.
      *

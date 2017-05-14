@@ -12,38 +12,6 @@ namespace WideFocus\Feed\Entity;
 interface FeedFieldInterface
 {
     /**
-     * Get the field id.
-     *
-     * @return string|null
-     */
-    public function getFieldId();
-
-    /**
-     * Set the field id.
-     *
-     * @param string $fieldId
-     *
-     * @return void
-     */
-    public function setFieldId(string $fieldId);
-
-    /**
-     * Get the feed id.
-     *
-     * @return string|null
-     */
-    public function getFeedId();
-
-    /**
-     * Set the feed id.
-     *
-     * @param string $feedId
-     *
-     * @return void
-     */
-    public function setFeedId(string $feedId);
-
-    /**
      * Get the type.
      *
      * @return string
@@ -90,22 +58,6 @@ interface FeedFieldInterface
      * @return void
      */
     public function setLabel(string $label);
-
-    /**
-     * Get the sort order.
-     *
-     * @return int
-     */
-    public function getSortOrder(): int;
-
-    /**
-     * Set the sort order.
-     *
-     * @param int $sortOrder
-     *
-     * @return void
-     */
-    public function setSortOrder(int $sortOrder);
 
     /**
      * Get the filters.
