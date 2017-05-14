@@ -45,20 +45,4 @@ interface FeedFieldFilterInterface
      * @return void
      */
     public function setParameters(ParameterBagInterface $parameters);
-
-    /**
-     * Get the sort order.
-     *
-     * @return int
-     */
-    public function getSortOrder(): int;
-
-    /**
-     * Set the sort order.
-     *
-     * @param int $sortOrder
-     *
-     * @return void
-     */
-    public function setSortOrder(int $sortOrder);
 }

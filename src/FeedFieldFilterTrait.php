@@ -71,26 +71,4 @@ trait FeedFieldFilterTrait
     {
         $this->parameters = $parameters;
     }
-
-    /**
-     * Get the sort order.
-     *
-     * @return int
-     */
-    public function getSortOrder(): int
-    {
-        return $this->sortOrder;
-    }
-
-    /**
-     * Set the sort order.
-     *
-     * @param int $sortOrder
-     *
-     * @return void
-     */
-    public function setSortOrder(int $sortOrder)
-    {
-        $this->sortOrder = $sortOrder;
-    }
 }

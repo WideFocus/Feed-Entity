@@ -23,8 +23,6 @@ class FeedFieldFilterTraitTest extends TestCase
      * @covers ::setType
      * @covers ::getParameters
      * @covers ::setParameters
-     * @covers ::getSortOrder
-     * @covers ::setSortOrder
      */
     public function testAccess()
     {
@@ -37,8 +35,5 @@ class FeedFieldFilterTraitTest extends TestCase
         $parameters = $this->createMock(ParameterBagInterface::class);
         $filter->setParameters($parameters);
         $this->assertSame($parameters, $filter->getParameters());
-
-        $filter->setSortOrder(42);
-        $this->assertEquals(42, $filter->getSortOrder());
     }
 }
